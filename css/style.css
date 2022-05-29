@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.header__index {
+    background-color: green;
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+.header__navbar {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
