@@ -1,66 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&family=Roboto&display=swap');
+
+:root {
+    --primary: #FFFF;
+    --secondary: rgb(59, 59, 63);
+    --tex-color: #FFFF;
+    --base: #FFFF;
+
+    --spacing-small: 2.4rem;
+
+    --font-principal: 'Roboto', sans-serif;
+    --font-tittle: 'Lato', sans-serif;
+
+    --text-large: 5.2em;
+    --text-medium: 2.4em;
+    --text-base: 1.6em;
+    --text-small: 1.4em;
+
+}
+
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;  
+}
 
-
-.grid-area {
+.body__nosotros {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 2fr;
-    grid-template-rows: repeat(3, 300px);
-    /* grid-template-areas: 
-    "nav header header"
-    "nav productos aside"
-    "nav servicios aside"
-    "nav footer footer"; */
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: repeat(3, 200px);
 }
 
-header {
-    /* grid-area: header; */
+.header__nosotros {
     background-color: black;
-    /* opacity: 90%; */
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
     grid-row: 1;
     
 }
 
-nav {
-    /* grid-area: nav; */
+.header__nosotros>img {
+    flex-basis: 40%;
+}
+
+.header__nosotros>img {
+    max-width: 150px;
+}
+
+.header__navbar>ul {
+    flex-basis: 60%;
+    display: flex;
+    gap: 8rem;
+    flex-direction: row;
+    justify-content: right;
+    align-content: center;
+}
+
+
+.main__nosotros {
     background-color: red;
-    grid-column: 3 / 5;
-    grid-row: 1;
-    
+    grid-column: 1 / 4;
+    grid-row: 2; 
+    justify-content: space-around;  
 }
 
-section#productos {
-    /* grid-area: productos; */
-    background-color: green;
-    grid-column: 2 / 4;
-    grid-row: 2;
-    
+.div__nosotros {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
 }
 
-section#servicios {
-    /* grid-area: servicios; */
-    background-color: yellow;
-    grid-column: 4 / 5;
-    grid-row: 2 / 4;
-    
-}
-
-aside {
-    /* grid-area: aside; */
-    background-color: purple;
-    grid-column: 1 / 2;
-    grid-row: 2;
-    
-}
-
-footer {
-    /* grid-area: footer; */    
+.footer__nosotros {
     background-color: blue;
     grid-column: 1 / 4;
-    grid-row: 3;
-    
+    grid-row: 3; 
 }

@@ -3,20 +3,148 @@
     padding: 0;
 }
 
-body{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+html {
+    background-color: rgb(59, 59, 63);
+    color: white;
 }
+
 
 .header__index {
-    background-color: green;
-    grid-column: 1 / 4;
-    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 }
 
-.header__navbar {
+.header__nav {
+    width: 50%;
+}
+
+.header__ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.header__li {
+    list-style: none;
+    padding: 30px;
+}
+.header__li>a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+      
+.header__li>a:hover {
+    background-color: #111;
+}
+
+.header__logo {
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.article__culturashoe1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.article__culturashoe2 {
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
 }
 
+.article__culturashoe3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.article__culturashoe4 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+article>img {
+    width: 20%;
+}
+
+article>p {
+    padding: 20px;
+    text-align: justify;
+}
+
+.footer__cultura {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.footer__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;    
+}
+
+.footer__a {
+    list-style: none;
+    padding: 30px;
+    margin: 5px;
+}
+
+.footer__div>a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+      
+.footer__div>a:hover {
+    background-color: #111;
+}
+
+.article__culturas1 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.article__culturas2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.article__culturas3 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.article__culturas4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+article>img {
+    width: 20%;
+}
+
+article>p {
+    padding: 20px;
+    text-align: justify;
+}
