@@ -1,0 +1,7 @@
+div {
+  background-color: crimson; }
+  div p {
+    color: blue; }
+
+section article {
+  display: flex; }
